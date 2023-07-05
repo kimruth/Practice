@@ -1,0 +1,198 @@
+body {
+    .register {
+        // margin-top: 50px;
+        // margin-bottom: 20px;
+        margin: 50px 0 20px 0;
+
+        form {
+            border: 1px solid $primary_color;
+            height: 105vh;
+            width: 60vw;
+            // background: blue;
+            margin: 0 auto;
+            text-align: center;
+            text-align: left;
+
+            h1 {
+                margin-top: 10px;
+                font-size: 3em;
+                text-align: center;
+            }
+
+            .personal-informations {
+                @include inputDiv;
+                margin-top: 50px;
+                display: flex;
+
+            }
+
+            .address {
+                @include inputDiv;
+                display: flex;
+                margin-top: 130px;
+
+                #address {
+                    width: 38.3vw;
+                }
+            }
+
+            .details {
+                @include inputDiv;
+                margin-top: 90px;
+                display: flex;
+
+
+                select {
+                    height: 40px;
+                    width: 19vw;
+                    font-size: 0.9em;
+                    border: 1px solid $primary_color;
+                    outline: none;
+                    color: rgb(22, 22, 160);
+                }
+            }
+
+            .checkbox {
+                margin-left: 22px;
+                margin-top: 30px;
+            }
+
+            .create-password {
+                margin-left: 22px;
+                margin-top: 80px;
+            }
+
+            .buttons {
+                display: flex;
+                justify-content: center;
+                margin-top: 30px;
+                gap: 625px;
+
+                .reset {
+                    padding: 5px;
+                    width: 150px;
+                    height: 40px;
+                    border: none;
+                    outline: none;
+                    font-size: 1.2em;
+                }
+
+                .return {
+                    background-color: white;
+                    border: 1px solid darkgrey;
+                    color: $primary_color;
+                }
+
+                .next {
+                    color: white;
+                    background-color: limegreen;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 765px) {
+    body {
+
+        .register {
+            margin-top: 50px;
+
+            form {
+                border: 1px solid $primary_color;
+                height: 91vh;
+                width: 100%;
+                // background: blue;
+                margin: 0 auto;
+                text-align: center;
+                text-align: left;
+
+                h1 {
+                    margin-top: 10px;
+                    font-size: 3em;
+                    text-align: center;
+                }
+
+                .form-control {
+                    // background: red;
+
+                    .personal-informations {
+                        @include inputDiv;
+                        margin-top: 10px;
+                        margin-left: 10%;
+                        display: block;
+
+
+                    }
+
+                    .address {
+                        @include inputDiv;
+                        display: block;
+                        margin-left: 10%;
+                        margin-top: 50px;
+
+                        #address {
+                            width: 90%;
+                        }
+                    }
+
+                    .details {
+                        @include inputDiv;
+                        display: block;
+                        margin-left: 10%;
+                        margin-top: 35px;
+
+
+                        select {
+                            height: 40px;
+                            width: 90%;
+                            font-size: 0.9em;
+                            border: 1px solid $primary_color;
+                            color: rgb(22, 22, 160);
+                            outline: none;
+                        }
+                    }
+
+                    .checkbox {
+                        margin-left: 10%;
+                        margin-top: 30px;
+                    }
+
+                    .create-password {
+                        margin-left: 10%;
+                        margin-top: 50px;
+                    }
+
+                    .buttons {
+                        display: flex;
+                        justify-content: space-between;
+                        margin-top: 20px;
+                        gap: 150px;
+                        width: 90%;
+                        margin: 0 auto;
+                        // background: red;
+                        .reset {
+                            padding: 5px;
+                            width: 160px;
+                            height: 40px;
+                            border: none;
+                            outline: none;
+                            font-size: 1.2em;
+                        }
+
+                        .return {
+                            background-color: white;
+                            border: 1px solid darkgrey;
+                            color: $primary_color;
+                        }
+
+                        .next {
+                            color: white;
+                            background-color: limegreen;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
